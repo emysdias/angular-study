@@ -1,0 +1,6 @@
+<div class="class">
+  <h2 *ngIf="canShow; else notAllowed">Show</h2>
+  <ng-template #notAllowed>
+    <h2>Allowed</h2>
+  </ng-template>
+</div>
