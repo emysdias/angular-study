@@ -19,7 +19,8 @@ export class ListService {
     return this.http.get<Animal>(`${this.apiUrl}/${id}`);
   }
 
-  remove(animals: Animal[], animal: Animal) {
-    return animals.filter((a) => animal.name !== a.name);
+  remove(id: number) {
+    //não precisa observar pq não vai atribuir a nada
+    return this.http.delete<Animal>(`${this.apiUrl}/${id}`);
   }
 }

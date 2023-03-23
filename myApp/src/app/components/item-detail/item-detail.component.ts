@@ -17,7 +17,6 @@ export class ItemDetailComponent {
   }
 
   getAnimal(): void {
-    console.log(this.route);
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.listService.getItem(id).subscribe((animal) => {
       this.animal = animal;
