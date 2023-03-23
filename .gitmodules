@@ -1,0 +1,3 @@
+[submodule "curso_angular_yt"]
+	path = curso_angular_yt
+	url = git@github.com:matheusbattisti/curso_angular_yt.git
